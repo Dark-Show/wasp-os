@@ -23,6 +23,7 @@ freeze('../..', manifest_240x240.manifest +
         'ppg.py',
         'shell.py',
         'wasp.py',
+        'apps/binclock.py',
     ),
     opt=3
 )

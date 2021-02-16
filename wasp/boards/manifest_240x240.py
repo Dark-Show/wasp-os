@@ -3,7 +3,6 @@
 """Shared manifest for applications that work well on a 240x240 display."""
 
 manifest = (
-    'apps/binclock.py',
     'apps/launcher.py',
     'apps/pager.py',
     'apps/settings.py',

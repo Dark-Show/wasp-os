@@ -33,8 +33,8 @@ class BinaryClockApp():
     def foreground(self):
         """Activate the application."""
         wasp.system.bar.clock = False
-        wasp.system.request_tick(1000)
         self._draw(True)
+        wasp.system.request_tick(1000)
 
     def sleep(self):
         """Notify the application the device is about to sleep."""
@@ -42,7 +42,7 @@ class BinaryClockApp():
 
     def wake(self):
         """Notify the application the device is waking up."""
-        self._draw(True)
+        self._draw()
 
     def tick(self, ticks):
         """Notify the application that its periodic tick is due."""
