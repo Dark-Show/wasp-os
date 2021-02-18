@@ -20,7 +20,7 @@ import micropython
 import watch
 import widgets
 
-from apps.clock import ClockApp
+from apps.binclock import BinaryClockApp
 from apps.launcher import LauncherApp
 from apps.pager import PagerApp, CrashApp, NotificationApp
 from apps.settings import SettingsApp
@@ -142,7 +142,7 @@ class Manager():
         self._scheduling = False
 
         # TODO: Eventually these should move to main.py
-        for app, qr in ( (ClockApp, True),
+        for app, qr in ( (BinaryClockApp, True),
                          (SettingsApp, False) ):
             try:
                 self.register(app(), qr)
