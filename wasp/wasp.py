@@ -24,6 +24,7 @@ from apps.binclock import BinaryClockApp
 from apps.launcher import LauncherApp
 from apps.pager import PagerApp, CrashApp, NotificationApp
 from apps.settings import SettingsApp
+from apps.breakout import BreakOutApp
 
 class EventType():
     """Enumerated interface actions.
@@ -143,6 +144,7 @@ class Manager():
 
         # TODO: Eventually these should move to main.py
         for app, qr in ( (BinaryClockApp, True),
+                         (BreakOutApp, False),
                          (SettingsApp, False) ):
             try:
                 self.register(app(), qr)

@@ -6,6 +6,7 @@ manifest = (
     'apps/launcher.py',
     'apps/pager.py',
     'apps/settings.py',
+    'apps/breakout.py',
     'fonts/__init__.py',
     'fonts/sans24.py',
     'fonts/sans28.py',
